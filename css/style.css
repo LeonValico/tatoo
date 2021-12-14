@@ -1,0 +1,108 @@
+.wrap {
+  background-image: url("../img/mainbg.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: auto;
+}
+.headerpos {
+  position: relative;
+  width: 100%;
+}
+.headnavpos {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.btn {
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.h2 {
+  padding: 50px 0;
+  margin-bottom: 50px 0;
+}
+.row {
+  margin-bottom: 0;
+}
+.wrapper {
+  background-image: url("../img/mainbg.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: auto;
+  font-size: 30px;
+  color: #ffffff;
+}
+.menu li a:last-child {
+  margin-right: 0;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+.headnav {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.btn-small {
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.btn-small:hover {
+  -webkit-box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+h2 {
+  padding: 50px 0;
+  margin-bottom: 50px 0;
+}
+footer h2 {
+  margin: 0;
+  padding: 5px;
+}
+footer ul span {
+  font-size: 15px;
+}
+.footimg {
+  background-image: url("../img/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  background-position: center center;
+}
+.proc {
+  background-image: url("../img/proc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 700px;
+}
+.proc img {
+  width: 64px;
+  height: 64px;
+}
+.red {
+  font-size: 40px;
+  font-weight: bold;
+}
+.submit {
+  border-color: #000;
+}
+.submit:hover {
+  -webkit-box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
+}

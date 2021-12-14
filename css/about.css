@@ -1,0 +1,113 @@
+main {
+  display: block;
+  background-color: #000;
+  max-width: 1200px;
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.infor {
+  display: block;
+  padding: 10px;
+  text-align: right;
+}
+
+.meimg {
+  display: block;
+  padding: 10px;
+  text-align: left;
+}
+
+.infor {
+  display: block;
+  padding: 10px;
+  text-align: right;
+}
+
+.infor2 {
+  display: block;
+  padding: 10px;
+  text-align: left;
+}
+
+.meimg img {
+  width: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.infor img {
+  width: 50%;
+  float: right;
+  margin-left: 15px;
+}
+
+.infor2 img {
+  width: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.meimg img:hover {
+  box-shadow: -5px -5px 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.infor img:hover {
+  box-shadow: 5px 5px 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.infor2 img:hover {
+  box-shadow: -5px -5px 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .meimg img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .infor img {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .infor2 img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .meimg img:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);
+  }
+
+  .infor img:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);
+  }
+
+  .infor2 img:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);
+  }
+
+  p {
+    font-size: 25px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 16px;
+  }
+}
