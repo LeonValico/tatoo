@@ -1,26 +1,48 @@
-.headertitle {
-  background-image: url(../img/backgr.jfif);
-  background-size: cover;
+.headtitle {
+  position: relative;
+  top: 100px;
+  background-image: url(../img/wallpaper4.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
 }
 
-h1 {
-  text-transform: uppercase;
-  font-weight: bolder;
-  padding: 50px 0;
+.headtitle h3:nth-child(1) {
+  position: absolute;
+  top: 5%;
+  left: 10%;
 }
 
-
-.headertitle p {
-  margin-bottom: 300px;
+.headtitle h3:nth-child(2) {
+  position: absolute;
+  top: 45%;
+  left: 42.5%;
 }
 
-h5 {
-  margin-bottom: 50px;
+.headtitle h3:nth-child(3) {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .headtitle h3:nth-child(1) {
+    position: static;
+    margin-bottom: 45%;
+  }
+
+  .headtitle h3:nth-child(2) {
+    position: static;
+    margin-bottom: 45%;
+  }
+
+  .headtitle h3:nth-child(3) {
+    position: static;
+  }
 }
 
 .card {
@@ -31,16 +53,17 @@ h5 {
 .carousel {
   margin-bottom: 150px;
 }
-.slider{
+
+.slider {
   margin-bottom: 50px;
   width: 50%;
+  height: 990px !important;
   margin-left: auto;
   margin-right: auto;
 }
-.slider .slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.slides {
+  height: 900px !important;
 }
 
 .card-action .btn-small {
@@ -54,23 +77,17 @@ h5 {
 .gallery a {
   margin-bottom: 50px;
 }
+
 .descrip {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 3.25rem;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
+.process {
+  background-image: url(../img/cool.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  height: 100vh;
+  width: 100%;
 }

@@ -1,108 +1,157 @@
-.wrap {
-  background-image: url("../img/mainbg.jpg");
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center center;
-  background-attachment: fixed;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #616161;
+  font-family: Playfair Display, serif;
+  color: #e0e0e0;
   min-height: 100vh;
   height: auto;
+  width: 100% margin: 0;
+  padding: 0;
 }
-.headerpos {
-  position: relative;
-  width: 100%;
-}
-.headnavpos {
+header {
   position: fixed;
   top: 0;
-  z-index: 11;
+  width: 100%;
+  z-index: 111;
+  background-color: #424242;
+  height: 100px;
+}
+.headnav {
+  height: 100px;
+  background-color: #424242;
+}
+.headtitle {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+p {
+  padding: 5px;
+  margin: 5px 0;
+}
+.active {
+  background: #edf3f8;
+  color: #212121;
 }
 .btn {
+  font-size: ;
+  text-decoration: none;
   border: 1px solid;
   border-color: rgba(255, 255, 255, 0.3);
-  -webkit-transition: 1s;
+  background: #bdbdbd;
+  padding: 10px;
+  color: #f7f7f7;
   transition: 1s;
 }
-.h2 {
-  padding: 50px 0;
-  margin-bottom: 50px 0;
+.btnlarge {
+  font-size: ;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  transition: 1s;
 }
 .row {
   margin-bottom: 0;
 }
-.wrapper {
-  background-image: url("../img/mainbg.jpg");
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  height: auto;
-  font-size: 30px;
-  color: #ffffff;
+.logoimg {
+  border-radius: 50%;
+  width: 13vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28.7vh;
+  margin: 0 auto;
 }
-.menu li a:last-child {
-  margin-right: 0;
+.btn-small:active {
+  background: #edf3f8;
+  color: #212121;
 }
-header {
-  position: relative;
-  width: 100%;
-}
-.headnav {
-  position: fixed;
-  top: 0;
-  z-index: 11;
-}
-.btn-small {
+.btn-small a {
+  font-size: ;
+  text-decoration: none;
   border: 1px solid;
   border-color: rgba(255, 255, 255, 0.3);
-  -webkit-transition: 1s;
+  background: #bdbdbd;
+  padding: 10px;
+  color: #f7f7f7;
+  transition: 1s;
+}
+.btn-large a {
+  font-size: ;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
   transition: 1s;
 }
 .btn-small:hover {
-  -webkit-box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.5);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  background: #edf3f8;
+  color: #212121;
+  box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
 }
-h2 {
-  padding: 50px 0;
-  margin-bottom: 50px 0;
+.btn-large:hover {
+  background: #edf3f8;
+  color: #212121;
+  box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
 }
 footer h2 {
   margin: 0;
   padding: 5px;
-}
-footer ul span {
-  font-size: 15px;
+  margin-bottom: 10px;
 }
 .footimg {
-  background-image: url("../img/footer.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 700px;
-  background-position: center center;
-}
-.proc {
   background-image: url("../img/proc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-repeat: repeat;
+  background-size: contain;
   width: 100%;
-  height: 700px;
+  height: 450px;
+  background-position: center center;
 }
 .proc img {
   width: 64px;
   height: 64px;
 }
-.red {
-  font-size: 35px;
-  font-weight: bold;
-}
 .submit {
   border-color: #000;
 }
 .submit:hover {
-  -webkit-box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+.titlelink {
+  padding: 5px;
+  height: 160px;
+}
+.link {
+  padding: 5px;
+}
+.modal {
+  max-width: 400px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .logoimg {
+    display: none;
+  }
+  .proc {
+    background-image: url("../img/proc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+  }
+  .footimgS {
+    background-image: url("../img/footer.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
